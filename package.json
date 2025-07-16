@@ -11,6 +11,7 @@
     "start": "electron ./",
     "dist:32": "electron-builder --ia32",
     "dist:64": "electron-builder --x64 -c.artifactName=${productName}-64bit-setup-${version}.${ext}",
+    "dist:arm64": "electron-builder --arm64 -c.artifactName=${productName}-arm64-setup-${version}.${ext}",
     "win": "electron-builder --windows portable",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
